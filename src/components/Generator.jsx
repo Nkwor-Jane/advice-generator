@@ -7,7 +7,7 @@ function Generator() {
     const [generator, setGenerator] = useState([]);
     const fetchAdvice = async() =>{
         try{
-            const response = await axios("https://api.adviceslip.com/advice");
+            const response = await axios("https://api.chucknorris.io/jokes/random");
                 setGenerator(response.data);
                 console.log(response.data)   
         }catch(err){
@@ -22,10 +22,10 @@ function Generator() {
             <div className="box">
                 <h3 className="header">
                     ADVICE 
-                    <span>#{generator.slip.id}</span>
+                    <span>#{generator.id}</span>
                 </h3>
                 <h4 className="text">
-                {generator.slip.advice}
+                {generator.value}
                 {/* try to dey do your best no matter the situation you find yourself in. */}
                 </h4>
                 <div className="span">
