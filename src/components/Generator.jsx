@@ -21,7 +21,7 @@ function Generator() {
           <div className="container">
             <div className="box">
                 <h3 className="header">
-                    ADVICE #{generator.id}
+                    JOKE #{generator.id}
                 </h3>
                 <h4 className="text">
                 Question: {generator.setup}
