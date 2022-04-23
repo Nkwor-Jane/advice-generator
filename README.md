@@ -18,8 +18,8 @@ I created a Random Joke generator with ReactJS and a JokeAPI.  When the Dice but
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
+- Light Mode
+![screenshot1](https://user-images.githubusercontent.com/69125833/164842815-2dbe76d2-3945-4f3b-a744-55cfa2d5f228.png)
 
 
 ### Links
