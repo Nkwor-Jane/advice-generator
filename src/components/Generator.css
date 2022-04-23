@@ -24,6 +24,10 @@
     text-align: center;
     padding: 1.25rem;
     width:30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .header{
@@ -42,7 +46,7 @@
     padding: 1.438rem;
 }
 .line{
-    width:15rem;
+    width:10rem;
     margin: 0.625rem;
     background-color: var(--lightCyan) ;
     border: 0.02rem solid var(--lightCyan);
@@ -55,11 +59,12 @@
 
 .button{
     background-color: var(--neonGreen);
-    border-radius: 50%;
+    border-radius: 20%;
     padding: 1%;
-    position: absolute;
-    bottom: 27%;
+    width: 35px;
     cursor: pointer;
+    margin-left: 0;
+    margin-right: 0;
 }
 @media (max-width:765px) {   
     .box{
