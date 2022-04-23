@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+## Table of contents
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [Overview](#overview)
+- [Screenshot](#screenshot)
+- [Links](#links)
+- [My process](#my-process)
+- [Built with](#built-with)
+- [What I learned](#what-i-learned)
+- [Continued development](#continued-development)
+- [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Overview
+I created a Random Joke generator with ReactJS and a JokeAPI.  When the Dice button is clicked, a new random joke is displayed. Time intervals of at least 5 seconds should be given between jokes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Screenshot
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![](./screenshot.jpg)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Links
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Live Site URL: (https://resonant-empanada-55b3ec.netlify.app/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## My process
+- Installed React.
+- Added neccessary files and a folder.
+- Wrote necessary code and CSS.
+- I used Axios to fetch data from the JokeApi Documentation.
+- I added an extra feature: Dark/Light Mode feature.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Built with
 
-### `npm run eject`
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### What I learned
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+I learnt how to fetch data with React Hooks and Axios. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Code Snippet:
 
-## Learn More
+```js
+function App() {
+  const [theme, setTheme] = useState("dark")
+  const toggleTheme = () =>{
+    setTheme((curr) => (
+      curr ==="dark" ? "light":"dark"
+    ))
+  }
+  return (
+    <ThemeContext.Provider value={{theme, toggleTheme}}>
+      <div id={theme}>
+      <Generator/>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+      {/* switch slider for light/dark mode */}
+      <div className="switch-checkbox">
+              <span id="mode-text">{theme === "light" ? "Light Mode" : "Dark Mode"}</span>
+                <label className="switch">
+                    <input type="checkbox" onChange={toggleTheme}/>
+                    <span className="slider round"> </span>
+                </label>
+                </div>
+    </div>
+    </ThemeContext.Provider>
+  );
+}
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Continued development
 
-### Code Splitting
+I will focus on bulding projects from Frontend Mentor challenges and personal projects for personal development.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Useful resources
 
-### Analyzing the Bundle Size
+- [Resource 1](https://www.asmeurer.com/git-workflow/) - This helped me with the Git wokflow.
+- [Resource 2](https://sv443.net/jokeapi/v2/) - This helped me with the free API.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Website - [Nkwor Jane](https://resonant-empanada-55b3ec.netlify.app/)
+- Frontend Mentor - [@@Nkwor-Jane](https://www.frontendmentor.io/profile/@Nkwor-Jane)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Acknowledgments
+I would like to thank Frontend Mentor.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
