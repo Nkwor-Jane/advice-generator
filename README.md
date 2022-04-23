@@ -90,7 +90,7 @@ I will focus on bulding projects from Frontend Mentor challenges and personal pr
 ## Author
 
 - Website - [Nkwor Jane](https://resonant-empanada-55b3ec.netlify.app/)
-- Frontend Mentor - [@@Nkwor-Jane](https://www.frontendmentor.io/profile/@Nkwor-Jane)
+- Frontend Mentor - [@Nkwor-Jane](https://www.frontendmentor.io/profile/@Nkwor-Jane)
 
 
 ## Acknowledgments
