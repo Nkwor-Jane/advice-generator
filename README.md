@@ -20,6 +20,8 @@ I created a Random Joke generator with ReactJS and a JokeAPI.  When the Dice but
 
 - Light Mode
 ![screenshot1](https://user-images.githubusercontent.com/69125833/164842815-2dbe76d2-3945-4f3b-a744-55cfa2d5f228.png)
+- Dark Mode
+![screenshot2](https://user-images.githubusercontent.com/69125833/164843642-850122bf-dce6-4791-9d1a-603b371b3f57.png)
 
 
 ### Links
